@@ -10,8 +10,8 @@ create_site(github_username = "kdgosik")
 \item{github_username}{string of your github username to create a button to direct to your page.}
 }
 \description{
-The function create_site is meant to make reporducible workflows easier and more standardized.  It
-many folders commonly used in projects suchs as docs, src and references.  It also creates an
+The function create_site is meant to make reporducible workflows easier and more standardized.  It creates
+many folders commonly used in projects suchs as docs, src, results and references.  It also creates an
 Rmarkdown file for a notebook as well as uses knitr to spin it into a static website.  This html
 file can be easily shared with collaborators or posted on github pages.  It is already placed in
 the docs folder, which the user can enable a github pages website to be created from that folder

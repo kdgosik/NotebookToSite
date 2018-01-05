@@ -1,11 +1,7 @@
 #' update_site
 #'
-#' The function create_site is meant to make reporducible workflows easier and more standardized.  It
-#' many folders commonly used in projects suchs as docs, src and references.  It also creates an
-#' Rmarkdown file for a notebook as well as uses knitr to spin it into a static website.  This html
-#' file can be easily shared with collaborators or posted on github pages.  It is already placed in
-#' the docs folder, which the user can enable a github pages website to be created from that folder
-#' under the repository director.
+#' The function update_site is meant to make reporducible workflows easier and more standardized.  This will
+#' update the R files that are in the src/chunks directory as well as knit new html files for the Notebook file.
 #'
 #' @seealso knitr
 #' @export
