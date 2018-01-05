@@ -75,7 +75,7 @@ create_site <- function(github_username = "kdgosik") {
                    '---')
   index_lines <- paste0("#'", index_lines)
   writeLines(index_lines, con = "src/index.R")
-  spin("src/index.R", knit = FALSE, format = "Rmd")
+  knitr::spin("src/index.R", knit = FALSE, format = "Rmd")
 
 
   ## creating Notebook Rmarkdown file
@@ -100,14 +100,14 @@ create_site <- function(github_username = "kdgosik") {
                   'knitr::opts_chunk$set(echo = TRUE)')
   template_lines <- c(template_lines, code_lines)
   writeLines(template_lines, con = "src/Notebook.R")
-  spin("src/Notebook.R", knit = FALSE, format = "Rmd")
+  knitr::spin("src/Notebook.R", knit = FALSE, format = "Rmd")
 
 
   ## output a purl version of the notebook at each documentation level
   lapply(0:2, function(i){
     new_file <- paste0("src/Notebook_DocLevel",i,".Rmd")
     file.copy("src/Notebook.Rmd", new_file, overwrite = TRUE)
-    purl(new_file, documentation = i)
+    knitr::purl(new_file, documentation = i)
     r_file <- paste0("Notebook_DocLevel", i, ".R")
     file.rename(r_file, paste0("src/", r_file))
   })
@@ -116,7 +116,7 @@ create_site <- function(github_username = "kdgosik") {
   file.copy("src/Notebook_DocLevel2.R", "src/FinalNotebook.R", overwrite = TRUE)
 
   ## spin Final Notebook version R file into and .Rmd file
-  spin("src/FinalNotebook.R", knit = FALSE, format = "Rmd")
+  knitr::spin("src/FinalNotebook.R", knit = FALSE, format = "Rmd")
 
   ## purl individual chunks of the final notbook into separate R files
   purl_chunks("src/FinalNotebook.Rmd")
