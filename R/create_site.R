@@ -28,7 +28,7 @@ create_site <- function(github_username = "kdgosik") {
 
   try({
     ## reproducible workflow image backgroud found at the ebook The Practice of Reproducible Research
-    download.file(url = "github.com/kdgosik/NotebookToSite/inst/images/cboettig.png",
+    download.file(url = "https://github.com/kdgosik/NotebookToSite/blob/master/inst/images/cboettig.png?raw=true",
                   destfile = "src/images/cboettig.png")
   })
 
