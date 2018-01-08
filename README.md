@@ -11,7 +11,7 @@ devtools::install_github("kdgosik/NotebookToSite")
 
 ## Usage
 
-Once you have the package installed you can use the functions in a typical R session.  The main function to use is <code> creare_site() </code> function.  This will create folders for docs, results and references.  Inside the docs folder it will have an index.html and a FinaNotebook.html among other files.  These can be used as a github pages site for your project.  You would have to enable this functionality for your github repository to render files in the docs folder into a site.  Under your repository go to the Settings tab, scroll down to the Github Pages section and under the source option change the drop down menu from 'None' to master branch/docs folder.  Just like that you have a basis for a website to share your project analysis!
+Once you have the package installed you can use the functions in a typical R session.  The main function to use is <code> create_site() </code> function.  This will create folders for docs, results and references.  Inside the docs folder it will have an index.html and a FinaNotebook.html among other files.  These can be used as a github pages site for your project.  You would have to enable this functionality for your github repository to render files in the docs folder into a site.  Under your repository go to the Settings tab, scroll down to the Github Pages section and under the source option change the drop down menu from 'None' to master branch/docs folder.  Just like that you have a basis for a website to share your project analysis!
 
 ```{r}
 library(NotebookToSite)
