@@ -31,4 +31,4 @@ update_site()
 
 ## Future Work
 
-This is the first interation of this package.  Pull requests and suggestions are welcome. I will update this with new ideas as they come to me. Let me know if you have anything you would like added to this to make it more robust.
+This is the first iteration of this package.  Pull requests and suggestions are welcome. I will update this with new ideas as they come to me. Let me know if you have anything you would like added to this to make it more robust.
