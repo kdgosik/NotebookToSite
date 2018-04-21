@@ -1,8 +1,9 @@
 Package: NotebookToSite
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Cretes a notebook and makes a site out of it. 
 Version: 0.1.0
-Author: person("Kirk", "Gosik", email = "kdgosik@gmail.com", role = c("aut", "cre"))
+Author: Kirk Gosik
+Maintainer: Kirk Gosik <kgosik@gmail.com>
 Description: Reproducible research package to call a function in order to automatically create directories
   files that are common for a project. It both creates markdown files and also knits them into html files
   to easily render into a static website.  This is set up to work with Github Pages placing the necessary 
