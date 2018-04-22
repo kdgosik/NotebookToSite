@@ -14,5 +14,5 @@ LazyData: true
 Imports: knitr, rmarkdown, utils,
 RoxygenNote: 6.0.1
 NeedsCompilation: no
-Packaged: 2018-04-22 14:57:09 UTC; kirk
-Built: R 3.4.2; ; 2018-04-22 14:57:42 UTC; unix
+Packaged: 2018-04-22 21:06:44 UTC; kirk
+Built: R 3.4.2; ; 2018-04-22 21:07:39 UTC; unix

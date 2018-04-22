@@ -8,7 +8,8 @@
 * package encoding: UTF-8
 * checking package namespace information ... OK
 * checking package dependencies ... OK
-* checking if this is a source package ... OK
+* checking if this is a source package ... NOTE
+Subdirectory ‘NotebookToSite.Rcheck/NotebookToSite’ seems to contain an installed version of the package.
 * checking if there is a namespace ... OK
 * checking for executable files ... OK
 * checking for hidden files and directories ... NOTE
@@ -35,8 +36,9 @@ is not mentioned in the DESCRIPTION file.
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... WARNING
-Found the following directory with the name of a check directory:
+Found the following directories with names of check directories:
   ./..Rcheck
+  ./NotebookToSite.Rcheck
 Most likely, these were included erroneously.
 * checking R files for non-ASCII characters ... OK
 * checking R files for syntax errors ... OK
@@ -73,4 +75,4 @@ LaTeX errors when creating PDF version.
 This typically indicates Rd problems.
 * checking PDF version of manual without hyperrefs or index ... OK
 * DONE
-Status: 2 WARNINGs, 5 NOTEs
+Status: 2 WARNINGs, 6 NOTEs

@@ -33,6 +33,8 @@ Files ‘README.md’ or ‘NEWS.md’ cannot be checked without ‘pandoc’ be
 File
   LICENSE
 is not mentioned in the DESCRIPTION file.
+Non-standard file/directory found at top level:
+  ‘NotebookToSite_0.1.0.tar.gz’
 * checking for left-over files ... OK
 * checking index information ... OK
 * checking package subdirectories ... OK
