@@ -1,0 +1,16 @@
+Package: NotebookToSite
+Type: Package
+Title: Cretes a notebook and makes a site out of it.
+Version: 0.1.0
+Author: Kirk Gosik
+Maintainer: Kirk Gosik <kgosik@gmail.com>
+Description: Reproducible research package to call a function in order to automatically create directories
+  files that are common for a project. It both creates markdown files and also knits them into html files
+  to easily render into a static website.  This is set up to work with Github Pages placing the necessary 
+  files into the docs directory of the project.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: knitr, rmarkdown, utils,
+RoxygenNote: 6.0.1
+Built: R 3.4.2; ; 2018-04-22 14:56:52 UTC; unix

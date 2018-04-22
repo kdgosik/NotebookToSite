@@ -1,0 +1,122 @@
+\nonstopmode{}
+\documentclass[letterpaper]{book}
+\usepackage[times,inconsolata,hyper]{Rd}
+\usepackage{makeidx}
+\usepackage[utf8]{inputenc} % @SET ENCODING@
+% \usepackage{graphicx} % @USE GRAPHICX@
+\makeindex{}
+\begin{document}
+\chapter*{}
+\begin{center}
+{\textbf{\huge Package `NotebookToSite'}}
+\par\bigskip{\large \today}
+\end{center}
+\begin{description}
+\raggedright{}
+\inputencoding{utf8}
+\item[Type]\AsIs{Package}
+\item[Title]\AsIs{Cretes a notebook and makes a site out of it.}
+\item[Version]\AsIs{0.1.0}
+\item[Author]\AsIs{Kirk Gosik}
+\item[Maintainer]\AsIs{Kirk Gosik }\email{kgosik@gmail.com}\AsIs{}
+\item[Description]\AsIs{Reproducible research package to call a function in order to automatically create directories
+files that are common for a project. It both creates markdown files and also knits them into html files
+to easily render into a static website.  This is set up to work with Github Pages placing the necessary
+files into the docs directory of the project.}
+\item[License]\AsIs{GPL-3}
+\item[Encoding]\AsIs{UTF-8}
+\item[LazyData]\AsIs{true}
+\item[Imports]\AsIs{knitr, rmarkdown, utils,}
+\item[RoxygenNote]\AsIs{6.0.1}
+\end{description}
+\Rdcontents{\R{} topics documented:}
+\inputencoding{utf8}
+\HeaderA{create\_site}{create\_site}{create.Rul.site}
+\keyword{knitr}{create\_site}
+\keyword{purl}{create\_site}
+%
+\begin{Description}\relax
+The function create\_site is meant to make reporducible workflows easier and more standardized.  It creates
+many folders commonly used in projects suchs as docs, src, results and references.  It also creates an
+Rmarkdown file for a notebook as well as uses knitr to spin it into a static website.  This html
+file can be easily shared with collaborators or posted on github pages.  It is already placed in
+the docs folder, which the user can enable a github pages website to be created from that folder
+under the repository director.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+create_site(github_username = "kdgosik")
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{github\_username}] string of your github username to create a button to direct to your page.
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Author}\relax
+Kirk Gosik <kdgosik@gmail.com>
+\end{Author}
+%
+\begin{SeeAlso}\relax
+knitr
+\end{SeeAlso}
+\inputencoding{utf8}
+\HeaderA{purl\_chunks}{purl\_chunks}{purl.Rul.chunks}
+\keyword{knitr}{purl\_chunks}
+\keyword{purl}{purl\_chunks}
+%
+\begin{Description}\relax
+The function purl\_chunks takes an Rmarkdown file and returns each chunk as a
+seperate R file.  It was found on stackoverflow at
+(https://stackoverflow.com/questions/35855837/with-knitr-preserve-chunk-options-when-purling-chunks-into-separate-files)
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+purl_chunks(input_file, input_path = "src/chunks")
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{input\_file}] String of the input file name to the Rmarkdown file that will be purlled into seperate chunks
+
+\item[\code{input\_path}] String of the path where to place the R files of each of the chunks
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Author}\relax
+Kirk Gosik <kdgosik@gmail.com>
+\end{Author}
+%
+\begin{SeeAlso}\relax
+knitr
+\end{SeeAlso}
+\inputencoding{utf8}
+\HeaderA{update\_site}{update\_site}{update.Rul.site}
+\keyword{knitr}{update\_site}
+\keyword{purl}{update\_site}
+%
+\begin{Description}\relax
+The function update\_site is meant to make reporducible workflows easier and more standardized.  This will
+update the R files that are in the src/chunks directory as well as knit new html files for the Notebook file.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+update_site()
+\end{verbatim}
+\end{Usage}
+%
+\begin{Author}\relax
+Kirk Gosik <kdgosik@gmail.com>
+\end{Author}
+%
+\begin{SeeAlso}\relax
+knitr
+\end{SeeAlso}
+\printindex{}
+\end{document}
